@@ -20,6 +20,19 @@ $(document).keydown("A",function()
 })
 
 
+$(".Start_button").click(function()
+{
+    if(start === false)
+    {
+        start = true;
+        nextSequence()
+        $(this).hide();
+    }
+    
+})
+
+
+
 
 function nextSequence()
 {
